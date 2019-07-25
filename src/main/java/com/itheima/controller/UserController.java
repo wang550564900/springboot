@@ -24,6 +24,10 @@ public class UserController {
         List<User>users=userService.findAll();
         return users;
     }
-
+    @RequestMapping("/hallo")
+    public String say(){
+        System.out.println("i love you java");
+        return "i hate you for 999years";
+    }
 }
 
